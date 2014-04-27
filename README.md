@@ -1,7 +1,11 @@
 Getting and Cleaning Data peer assessment
 ------------------------------------------
 
-This is my submission. It requires very little setup. Run it anywhere; if there is no "UCI HAR Dataset" in your working directory, the script will take care of downloading the zip file and unzipping it (and will delete the zip file to keep things clean). The only dependency (the reshape library) will be taken care of by the code.
+This is my submission. It requires very little setup. Run it anywhere; if there is no directory named "UCI HAR Dataset" in your working directory, the script will take care of downloading the zip file and unzipping it (and will delete the zip file to keep things clean). The source data will remain in the working directory upon completion of the script.
+
+The only dependency (the reshape library) will be taken care of by the code.
+
+Obviously, if the code needs to handle source data acquisition or library installation itself, it'll need an internet connection.
 
 ```bash
 >source("run_analysis.R")
