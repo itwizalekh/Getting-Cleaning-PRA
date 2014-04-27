@@ -1,5 +1,5 @@
 #file setup; if the UCI HAR Dataset folder does not exist in the working directory,
-# we pull the zip file from the Coursera-provided link and unzip it, cleaning up after
+#  we pull the zip file from the Coursera-provided link and unzip it, cleaning up after
 folder <- "UCI HAR Dataset"
 if(!file.exists(folder)) {
 	zipFile <- "src_data.zip"
