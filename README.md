@@ -17,7 +17,12 @@ The results are outputted to tidyoutput.txt. To test the output, consider runnin
 
 ```bash
 >tidyOutput <- read.table("tidyoutput.txt")
+> nrow(tidyOutput)
+[1] 180
+> ncol(tidyOutput)
+[1] 68
 >print(head(tidyOutput))
+...
 ```
 
 Thanks for your time!
