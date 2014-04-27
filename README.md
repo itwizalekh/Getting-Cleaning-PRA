@@ -13,7 +13,7 @@ Obviously, if the code needs to handle source data acquisition or library instal
 >
 ```
 
-The results are outputted to tidyoutput.txt. To test the output, consider running the following in the same working directory:
+The results are outputted to tidyoutput.txt. To test the output, consider running the following checks in the same working directory:
 
 ```bash
 > tidyOutput <- read.table("tidyoutput.txt")
