@@ -8,7 +8,7 @@ The only R library dependency (the reshape library) will be taken care of by the
 Obviously, if the code needs to handle source data acquisition or library installation itself, it'll need an internet connection.
 
 ```bash
->source("run_analysis.R")
+> source("run_analysis.R")
 [1] "Script completed. To check results, run read.table function on tidyoutput.txt"
 >
 ```
@@ -16,12 +16,12 @@ Obviously, if the code needs to handle source data acquisition or library instal
 The results are outputted to tidyoutput.txt. To test the output, consider running the following in the same working directory:
 
 ```bash
->tidyOutput <- read.table("tidyoutput.txt")
+> tidyOutput <- read.table("tidyoutput.txt")
 > nrow(tidyOutput)
 [1] 180
 > ncol(tidyOutput)
 [1] 68
->print(head(tidyOutput))
+> print(head(tidyOutput))
 ...
 ```
 
