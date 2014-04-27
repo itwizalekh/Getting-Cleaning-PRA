@@ -43,7 +43,10 @@ comp <- cbind(comp, measurements[ , labelsOfInterest ])
 rm(measurements)
 
 #melt and cast the composite table, taking the mean of variables for each subject+activity
-require("reshape")
+if(!require("reshape")) {
+	install.packages("reshape")
+}
+
 library(reshape)
 melted <- melt(comp, id=c("subject", "activity"))
 tidy <- cast(melted, subject+activity~variable, mean)
