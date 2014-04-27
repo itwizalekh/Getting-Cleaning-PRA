@@ -21,7 +21,7 @@ The results are outputted to tidyoutput.txt. To test the output, consider runnin
 [1] 180
 > ncol(tidyOutput)
 [1] 68
-> print(head(tidyOutput))
+> head(tidyOutput)
 ...
 ```
 
