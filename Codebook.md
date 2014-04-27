@@ -4,8 +4,8 @@ This is a description of the output file from my script.
 
 ID Variables
 ------------
-*subject = subject number
-*activity = activity performed by subject while wearing accelerometer, as a string
+* subject = subject number
+* activity = activity performed by subject while wearing accelerometer, as a string
 
 Measurement Variables
 ---------------------
