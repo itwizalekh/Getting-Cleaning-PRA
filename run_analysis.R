@@ -50,5 +50,8 @@ tidy <- cast(melted, subject+activity~variable, mean)
 rm(comp, melted)
 
 #output new tidy dataset and clean up downloaded data
-write.table(tidy, "tidyoutput.txt", row.names=FALSE)
+write.table(tidy, "tidyoutput.txt")
 rm(tidy)
+
+#completion message
+print('Script completed. To check results, run read.table function on tidyoutput.txt')
