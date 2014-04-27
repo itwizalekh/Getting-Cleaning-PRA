@@ -54,4 +54,4 @@ write.table(tidy, "tidyoutput.txt")
 rm(tidy)
 
 #completion message
-print('Script completed. To check results, run read.table function on tidyoutput.txt')
+print("Script completed. To check results, run read.table function on tidyoutput.txt")
