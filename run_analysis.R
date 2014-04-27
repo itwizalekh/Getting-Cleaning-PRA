@@ -42,12 +42,13 @@ labelsOfInterest <- (grepl("-mean()", names(measurements)) & !grepl("-meanFreq",
 comp <- cbind(comp, measurements[ , labelsOfInterest ])
 rm(measurements)
 
-#melt and cast the composite table, taking the mean of variables for each subject+activity
-if(!require("reshape")) {
+#include the reshape library and install it if needed
+if(!suppressWarnings(require("reshape"))) {
 	install.packages("reshape")
+	library(reshape)
 }
 
-library(reshape)
+#melt and cast the composite table, taking the mean of variables for each subject+activity
 melted <- melt(comp, id=c("subject", "activity"))
 tidy <- cast(melted, subject+activity~variable, mean)
 rm(comp, melted)
