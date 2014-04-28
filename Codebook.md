@@ -9,7 +9,8 @@ ID Variables
 
 Measurement Variables
 ---------------------
-These fields are all taken from the source data (described below), but mean-averaged across all instances of each activity for each subject.
+These fields are all taken from the source data (described below), but mean-averaged across all instances of each activity for each subject. The units are unchanged from the source data (again, see below).
+
 ('-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.) 
 
 * tBodyAcc-mean()-XYZ
