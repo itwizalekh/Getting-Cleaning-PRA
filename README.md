@@ -18,7 +18,7 @@ Steps performed by run_analysis.R:
 * bind together test and training data
 * label activities and measurements based on index files
 * combine subjects and activities into one data frame
-* extract all measurements from source data that contain "mean()" or "std()" (not to include those with "meanFreq()")
+* extract all measurements from source data that contain "mean()" or "std()" (not to include those with "meanFreq()") and add them all the composite data frame
 * include/install reshape library as needed
 * melt and cast the data so as to take the mean of each measurement for each subject+activity
 * output the results to file
